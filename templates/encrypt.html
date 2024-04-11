@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Embed Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/encrypt.css">
+</head>
+<body>
+    <div class="container">
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="static/hello.mp4" type="video/mp4">
+        </video>
+        <div class="container-card">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card p-4 shadow rounded">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Encryption</h3>
+                            <form class="needs-validation" method="post" action="/hello" novalidate>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <input type="text" class="form-control" id="message" name="message"
+                                        placeholder="Enter text to be encrypted" aria-describedby="messageHelp" required />
+                                    <div id="messageHelp" class="form-text">Enter the message you want to encrypt.</div>
+                                </div>
+                                <br>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary d-block w-100">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
